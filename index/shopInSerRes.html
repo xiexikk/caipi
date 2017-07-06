@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="x5-page-mode" content="no-title">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-min.js"></script>
+    <script src="../js/jquery.lazyload.mini.js"></script>
+</head>
+<body>
+
+<section class="inSer">
+    <div class="in">
+        <a href="javascript :history.back(-1)" class="cancle">取消</a>
+        <div class="cen">
+            <div class="mid">
+                <span class="nr fl"><em>货号</em><i class="iconFamily"></i></span>
+                <div class="inp fl">
+                    <input type="text" placeholder="输入货号">
+                    <i class="del iconFamily"></i>
+                </div>
+            </div>
+            <div class="nrDown">
+                <div class="down">
+                    <i class="iconFamily hor_center"></i>
+                    <ul>
+                        <li><span>商品</span></li>
+                        <li class="cur"><span>货号</span></li>
+                        <li><span>品牌</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button>搜索</button>
+    </div>
+</section>
+
+<section class="sorting">
+    <div class="tab">
+        <ol>
+            <li class="all">
+                <a href="javascript:;"><span>全部品牌</span><i class="iconFamily"></i></a>
+            </li>
+        </ol>
+        <ul>
+            <li class="cur">
+                <a href="javascript:;"><span>默认</span></a>
+            </li>
+            <li>
+                <a href="javascript:;"><span>销量</span><i class="iconFamily"></i></a>
+            </li>
+            <li>
+                <a href="javascript:;"><span>价格</span><i class="iconFamily"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="brand">
+    <div class="allList">
+        <div class="con pdlr4">
+            <ul>
+                <li class="cur"><a href="javascript:;">全部</a></li>
+                <li><a href="javascript:;">品牌1</a></li>
+                <li><a href="javascript:;">品牌2</a></li>
+                <li><a href="javascript:;">品牌3</a></li>
+                <li><a href="javascript:;">品牌4</a></li>
+                <li><a href="javascript:;">品牌5</a></li>
+                <li><a href="javascript:;">品牌1</a></li>
+                <li><a href="javascript:;">品牌6</a></li>
+            </ul>
+            <div class="btn">
+                <a href="javascript:;" class="cancle">取消</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="serPro">
+    <div class="in">
+        <ul>
+            <li>
+                <a href="javascript:;" class="item">
+                    <div class="pic">
+                         <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro01.png" alt="商品图">
+                    </div>
+                    <div class="txt">
+                        <p>波点可爱风格小笔记本 7个色套装牛津纸</p>
+                        <span class="pri">￥99.00</span>
+                        <span class="xl">销量<em>150</em></span>
+                    </div>
+                    <div class="ico">
+                        <span class="collect"></span>
+                        <span class="car iconFamily"></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="item">
+                    <div class="pic">
+                        <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro02.png" alt="商品图">
+                    </div>
+                    <div class="txt">
+                        <p>波点可爱风格小笔记本 7个色套装牛津纸</p>
+                        <span class="pri">￥88.00</span>
+                        <span class="xl">销量<em>220</em></span>
+                    </div>
+                    <div class="ico">
+                        <span class="collect" ></span>
+                        <span class="car iconFamily"></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="item">
+                    <div class="pic">
+                        <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro03.png" alt="商品图">
+                    </div>
+                    <div class="txt">
+                        <p>波点可爱风格小笔记本 7个色套装牛津纸</p>
+                        <span class="pri">￥699.00</span>
+                        <span class="xl">销量<em>88</em></span>
+                    </div>
+                    <div class="ico">
+                        <span class="collect"></span>
+                        <span class="car iconFamily"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<script>
+    var jq=jQuery.noConflict();
+    jq(function(){jq(".serPro li img").lazyload({placeholder:"../images/img-index/proLoad.gif",effect:"fadeIn"});});
+</script>
+
+<section class="buyInWrap ">
+    <div class="in">
+        <div class="proDet">
+            <i class="close iconFamily"></i>
+            <div class="det">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../images/img-index/buyPro01.png"></a>
+                </div>
+                <div class="txt">
+                    <p class="p1">货号<em>15201</em></p>
+                    <p class="p2"><span>￥9.9</span><del>￥18.8</del></p>
+                    <p class="p3"><span>起购≥20</span></p>
+                </div>
+            </div>
+            <div class="amount">
+                <ul>
+                    <li>
+                        <span class="color fl">红色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">黑色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">白色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">黑色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">紫色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">灰色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button type="button" class="sure">确定</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function(){
+        //弹窗
+        function popUp(btn,wrap,close){
+            var speed  = 200;
+            $(wrap).hide();
+            $(btn).click(function(){
+                $(wrap).fadeIn(speed);
+                $('html').css('overflow','hidden');
+            })
+            $(close).click(function(){
+                $(wrap).fadeOut(speed);
+                $('html').css('overflow','initial');
+            })
+        }
+        popUp('.serPro .car','.buyInWrap','.buyInWrap .close');
+        //购买数量
+        var maxNum = 1000;
+        function redAdd(red,add){
+            $(red).click(function(event) {
+                var num = parseInt($(this).siblings('input').val());
+                num--;
+                if(num < 0){
+                    num = 0;
+                }
+                $(this).siblings('input').val(num);
+            });
+            $(add).click(function(event) {
+                var num = parseInt($(this).siblings('input').val());
+                num++;
+                if(num > maxNum){
+                    num = maxNum;
+                }
+                $(this).siblings('input').val(num);
+            });
+        }
+        redAdd('.reduceBtn','.addBtn');
+    })
+</script>
+
+<div class="backTop">
+    <i class="iconFamily"></i>
+</div>
+
+</body>
+</html>

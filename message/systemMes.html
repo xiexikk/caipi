@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>系统消息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="x5-page-mode" content="no-title">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/message.css" />
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body style="background-color: #fff;">
+
+<section class="sysMes">
+    <div class="in">
+        <ul>
+            <li class="item">
+                <div class="hd">
+                    <span>05月13号 09:50</span>
+                </div>
+                <div class="bd">
+                    <span class="ti">我是标题</span>
+                    <div class="wz">
+                        <p>含泪播种的人一定能含笑收获。含泪播种的人一定能含笑收获。含泪播种的人一定能含笑收获。含泪播种的人一定能含笑收获。含泪播种的人一定能含笑收获。</p>
+                    </div>
+                    <span class="stretch">
+                         <i></i>
+                        <span>展开</span>
+                    </span>
+                </div>
+            </li>
+            <li class="item">
+                <div class="hd">
+                    <span>05月13号 09:50</span>
+                </div>
+                <div class="bd">
+                    <span class="ti">我是标题</span>
+                    <div class="wz">
+                        <p>庸人的缺点就在于不能控制自己的感情，容易失去理智，而成功者则善于把握这个尺度，谨慎处事。</p>
+                    </div>
+                    <span class="stretch">
+                         <i></i>
+                        <span>展开</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<script>
+    $(function(){
+        var bl = true;
+        $('.stretch').click(function(event) {
+            if(bl==true){
+                $(this).children('span').html('收缩');
+                $(this).addClass('ss');
+                $(this).siblings('.wz').children('p').addClass('show');
+                bl=false;
+            }else{
+                $(this).children('span').html('展开');
+                $(this).removeClass('ss');
+                $(this).siblings('.wz').children('p').removeClass('show');
+                bl=true;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

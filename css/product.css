@@ -1,0 +1,275 @@
+/*proDet.html*/
+.banner{ position: relative;}
+.banner .slideBox{ position:relative;}
+.banner .slideBox .hd{ position:absolute; bottom:0.3rem; z-index:1; }
+.banner .slideBox .hd li{ display:inline-block; width:0.12rem; height:0.12rem; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; border-radius:50%; background-color:#e5a28e; text-indent:-99999px; overflow:hidden; margin:0 0.1rem; }
+.banner .slideBox .hd li.on{ background-color:#81c730;}
+.banner .slideBox .bd{ position:relative; z-index:0; }
+.banner .slideBox .bd li{ position:relative; text-align:center; }
+.banner .slideBox .bd li img{ width:100%;}
+.banner .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0); display:block;}
+.banner .back{ position: absolute; left: 0.25rem; top: 0.25rem;}
+.banner .back a{ width: 0.58rem; height: 0.58rem; background-position: -1.4rem -0.7rem; display: inline-block;}
+.banner .purchas{ position: absolute; right: 0.25rem; top: 0.25rem;}
+.banner .purchas a{ width: 0.58rem; height: 0.58rem; background-position: -2rem -0.7rem; display: inline-block;}
+.banner .purchas a i{ width: 0.18rem; height: 0.18rem; border-radius: 50%; box-sizing: border-box; background-color: #f14239; border: 1px solid #fff;display: inline-block; position: absolute; right: 0.05rem; top: 0.08rem;}
+.proDetail .hd{ padding: 0.25rem 0.3rem 0.3rem 0.25rem; overflow: hidden; background-color: #fff;}
+.proDetail .hd p{ font-size: 0.32rem ;color: #000;}
+.proDetail .hd ul{ margin-top: 0.2rem; overflow: hidden; width: 100%;}
+.proDetail .hd li{ width: 33.3%; float: left; color: #666; font-size: 0.24rem; line-height: 0.42rem; text-align: center;}
+.proDetail .hd li:first-of-type{ text-align: left;}
+.proDetail .hd li:last-of-type{ text-align: right;}
+.proDetail .hd li em{ display: block; margin-top: 0.2rem ;color: #fd554a; font-size: 0.36rem;}
+.proDetail .mid{ margin-top: 0.1rem;}
+.proDetail .mid ol{ width: 100%; height: 0.8rem; line-height: 0.8rem; border-top: 1px solid #999; border-bottom: 1px solid #999;background-color: #fff;display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.proDetail .mid ol li{ font-size: 0.28rem; color: #333; text-align: center; border-top: 2px solid transparent; float: left; margin: -1px 0; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1;}
+.proDetail .mid ol li.cur{ color: #fd554a; border-color: #fd554a;}
+.proDetail .mid ol li span{ margin: 0 0.3rem;}
+.proDetail .mid ol li em{ display: inline-block;}
+.proDetail .mid ul{ overflow: hidden; background-color: #fff;}
+.proDetail .mid ul li{ padding: 0.25rem 0 0.4rem; display: none;}
+.proDetail .mid ul li:first-of-type p{ font-size: 0.24rem; line-height: 0.3rem; margin: 0 0.2rem 0.2rem; }
+.proDetail .mid ul li:first-of-type .tp{ width: 100%; overflow: hidden; margin-bottom: 0.1rem;}
+.proDetail .mid ul li:first-of-type .tp img{ width: 100%;}
+.proDetail .mid li.li02{ padding-left:0.25rem; padding-right: 0.25rem;}
+.proDetail .mid ul li.li02 .parm{ margin-bottom: 0.35rem; color: #666; font-size: 0.24rem;overflow: hidden; }
+.proDetail .mid .parm .ti{ width: 22%;}
+.proDetail .mid .parm .tr{ width: 78%;}
+.proDetail .mid .parm .tr p{overflow: hidden; white-space: nowrap;text-overflow: ellipsis; }
+.proDetail .mid .parm .tr span{  margin-bottom: 0.1rem;display: inline-block;}
+.proDetail .mid .parm:last-of-type{ margin-bottom: 0;}
+.proDetail .mid ul li.li03 .item{ padding:0.15rem 0.25rem; margin-bottom: 0.2rem;}
+.proDetail .mid ul li.li03 .itHd{ overflow: hidden; margin-bottom: 0.15rem; }
+.proDetail .mid .itHd .name{ font-size: 0.24rem; color: #666; margin-right: 0.25rem;float: left;}
+.proDetail .mid .itHd .star{ float: left;}
+.proDetail .mid .star span{ width: 0.27rem; height: 0.25rem; background: url("../images/img-product/star.png"); background-size: cover; display: inline-block;}
+.proDetail .mid .star span.hover{ background-position: right top;}
+.proDetail .mid .remark{ color: #120101; font-size: 0.24rem; line-height: 0.36rem;}
+.proDetail .mid .bot{ font-size: 0.2rem; color: #666; margin-top: 0.15rem; }
+.proDetail .mid .bot span{ display: inline-block; margin-right: 0.1rem;}
+.proDetail .mid .bot span em{ margin: 0 2px;}
+.proDetail .mid .chatMore{ text-align: center; margin-top: 0.5rem; margin-bottom: 0.5rem;}
+.proDetail .mid .chatMore button{ font-size: 0.24rem; color: #666; width: 1.86rem; height: 0.5rem; background-color: transparent; border: 1px solid #ccc; box-sizing: border-box;}
+.proBot{ position: relative; width: 100%; height: 0.96rem;}
+.proBot .in{ position: fixed; left: 0; bottom: 0;  z-index: 666; width: 100%; height: 0.96rem; border-top: 1px solid #ebebeb; background-color: #fff; }
+.proBot .inL{ width: 37.5%; box-sizing: border-box;}
+.proBot .inL a{ width: 50%; border-right: 1px solid #ebebeb; display: inline-block; text-align: center;padding:0.1rem 0; float: left; box-sizing: border-box; }
+.proBot .inL a .tp{ width: 0.45rem; height: 0.45rem; display: inline-block;background-size: cover;  }
+.proBot .inL a .tx{ font-size: 0.24rem; color: #000; display: block; margin-top: 0.08rem;}
+.proBot .inL a.kf .tp{ background: url("../images/img-product/kf.png") no-repeat;background-size: cover;  }
+.proBot .inL a.sc .tp{ background: url("../images/img-product/favv.png") no-repeat left top;background-size: cover;}
+.proBot .inL a.sc.hover .tp{ background-position: right top;}
+.proBot .inR{ width: 62.5%; height: 100%;}
+.proBot .inR button{ width: 50%; height: 100%; box-sizing: border-box; font-size: 0.28rem; color: #fff; display: inline-block;  float: left;}
+.proBot .inR button.addList{ border-right: 1px solid #FFF; background-color: #fd776e;}
+.proBot .inR button.immBuy{ background-color: #fd554a;}
+.bindPop{ width: 100%; height: 100%; position: fixed ;left:0; top: 0; background-color: rgba(0,0,0,0.3); z-index: 77; display: none;}
+.bindPop .in{ width: 70%; background-color: #fff; }
+.bindPop .in .ti{ text-align: center; color: #000; font-size: 0.32rem; width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff;}
+.bindPop .in .btn a{ line-height: 0.8rem; height: 0.8rem; width:50%; font-size: 0.32rem; color: #000; text-align: center; background-color: #fd554a; display: inline-block; float: left; box-sizing: border-box; }
+.bindPop .in .btn a.cancle{ border-right: 1px solid #fff;}
+.buyInWrap2 .proDet .btn button{ font-size: 0.28rem;}
+.buyInWrap2 .btn button.addBtn{  background-color: #fe9992; border-right: 1px solid #e0e0e0;}
+.buyInWrap2 .btn button.buyBtn{ background-color: #fd554a;}
+.addListTip{ padding: 0.15rem; border-radius: 0.1rem; background-color: #f14239; color: #fff; font-size: 0.24rem;  position: fixed; bottom:1.2rem;z-index: 11; display: none;}
+
+/*subOrder.html*/
+.subOrd .addEd{; position: relative;}
+.subOrd .addEd .item{ display: block; background-color: #fff;padding: 0.25rem; overflow: hidden}
+.subOrd .addEd .edL{ padding-right: 18%; padding-left: 10%; font-size: 0.28rem; color: #000;}
+.subOrd .addEd .edL .hd{ overflow: hidden; }
+.subOrd .addEd .edL .hd .phone{ margin-left: 0.35rem;}
+.subOrd .addEd .edL .bd p{  line-height: 0.34rem;  margin-top: 0.18rem;}
+.subOrd .addEd i{ background-position: -2.5rem 0; width: 0.12rem; height: 0.22rem; right: 0.25rem;}
+.subOrd .addEd .pos{ width: 0.34rem; height: 0.45rem; background-position: -1.5rem -1.4rem;}
+.subOrd .newAdd a{display: block;  width: 100%;  height: 1.27rem;  line-height: 1.27rem;  color: #fd554a;  font-size: 0.28rem;  text-align: center;  background-color: #fff;  border: 1px solid #ccc;  margin: 0 -1px;}
+.subOrd .newAdd a i{width: 0.32rem;  height: 0.32rem;  background-position: -2rem -0.3rem;  display: inline-block;  vertical-align: middle;  margin-right: 0.15rem;}
+.subOrd .ordDet{ background-color: #fff; overflow: hidden;font-size: 0.28rem; color: #000; margin-bottom: 0.5rem;}
+.subOrd .ordDet .spDet{ overflow: hidden; padding:0.25rem 0; margin: 0 0.25rem;}
+.subOrd .ordDet .pic{ width: 1.48rem; height: 1.48rem; border: 1px solid #ebebeb; overflow: hidden; box-sizing: border-box; float: left; position: relative;}
+.subOrd .ordDet .txt{ margin-left: 1.6rem; overflow: hidden; }
+.subOrd .ordDet .txt .hd{ overflow: hidden;}
+.subOrd .ordDet .txt p{ width:80%; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.subOrd .ordDet .txt .hh{ margin-top: 0.2rem;}
+.subOrd .ordDet .txt .hh em{ margin-left: 2px;}
+.subOrd .ordDet .txt .color{ margin-top: 0.25rem;}
+.subOrd .ordDet .txt .color ul{ overflow: hidden;}
+.subOrd .ordDet .txt .color ul li{ float: left; font-size: 0.2rem; margin-right: 0.05rem; margin-bottom: 0.05rem;}
+.subOrd .ordDet .txt .color ul li em{ margin:0 1px;}
+.subOrd .itm{ line-height: 1rem; border-top: 1px solid #ebebeb; padding: 0 0.25rem; overflow: hidden;}
+.subOrd .integrate{ margin-left: 0.1rem;}
+.subOrd .integrate .use{color: #fd554a;}
+.subOrd .integrate .use i{ width: 0.46rem; height: 0.46rem; background: url("../images/img-product/use.png") no-repeat; background-size: cover; display: inline-block;vertical-align: middle;}
+.subOrd .integrate .use i.hover{ background-position: right top;}
+.subOrd .mes textarea{ font-size: 0.28rem; width: 85%; box-sizing: border-box; float: left; margin-top: 0.2rem; padding: 0.13rem 0 0.05rem 0.2rem; }
+.subOrd .count{ text-align: right;}
+.subOrd .count span{ margin-left: 0.2rem;}
+.subBot{ position: relative; height: 1rem; width: 100%;}
+.subBot .in{ position: fixed; left: 0; bottom:0; z-index: 11; width: 100%; height:1rem; line-height: 1rem; background-color: #fff; border-top: 1px solid #ccc; font-size: 0.32rem;}
+.subBot .inL{ width: 65%;  text-align: center;}
+.subBot .inL .ordPri{ color: #ea4704; margin-left: 0.1rem;}
+.subBot .btn{ width: 35%;}
+.subBot .btn button{ width: 100%;line-height: 1rem;  background-color: #fd554a; color: #fff; display: block; font-size: 0.32rem;}
+
+/*successBuy.html*/
+.sucBuy .in{ background-color: #fff; padding: 0.9rem 10% 0.35rem; overflow:hidden;}
+.sucBuy .hdTit{ color: #000; font-size: 0.32rem; }
+.sucBuy .hdTit i{ width: 0.66rem; height: 0.66rem; background-position:-2.7rem -0.6rem; display: inline-block; vertical-align: middle;  margin-right: 0.3rem;}
+.sucBuy .tip{ font-size: 0.28rem; color: #666; line-height: 0.48rem; margin-top: 0.6rem;}
+.sucBuy .btn{ margin-top: 1rem; text-align: center;}
+.sucBuy .btn button{width: 2.1rem; height: 0.6rem; background-color: #fa8b88; color: #fa8b88; font-size: 0.32rem; color: #fff;  display: inline-block;}
+.botLink{ margin-top: 0.7rem; overflow: hidden; padding: 0 4%;}
+.botLink div{ width: 50%; text-align: center; float: left;}
+.botLink a{ font-size: 0.28rem; color: #fd554a;}
+
+/*order.html*/
+.order .tab{ overflow: hidden; position: relative; }
+.order .tab ol{ overflow: hidden;display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: fixed; left: 0; top: 0; z-index: 9999; width: 100%; height: 0.8rem; background-color: #fff; border-bottom: 1px solid #dcdcdc;}
+.order .tab ol li{ -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: 0.8rem; line-height: 0.8rem; text-align: center;}
+.order .tab ol li span{ line-height: 0.8rem; font-size: 0.28rem; color: #000; border-bottom: 2px solid transparent; margin: -1px 0; display: inline-block;}
+.order .tab ol li.cur span{ border-bottom-color: #fd554a; color: #fd554a;}
+.order .list{ overflow: hidden;}
+.order .list ul{overflow: hidden;}
+.order .list ul li .item{ margin-bottom: 0.2rem; background-color: #fff;}
+.order .item .hdTit{ height: 0.8rem; line-height: 0.8rem; padding: 0 0.2rem; background-color: #efcac8;}
+.order .item .hdTit .ti{ font-size: 0.24rem;}
+.order .item .hdTit .state{ color: #fd554a; font-size: 0.28rem;}
+.order .item .mid{ padding: 0.3rem 0.25rem; background-color: #fff;}
+.order .sp{ display: block;  margin-bottom: 0.4rem;}
+.order .pic{ width: 0.94rem; height: 0.94rem; overflow: hidden; border: 1px solid #ebebeb; position: relative;  float:left ;}
+.order .txt{ margin-left: 1.25rem;}
+.order .txt .hd{ overflow: hidden;}
+.order .txt .hd p{ width: 80%; overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis; font-size: 0.28rem;  }
+.order .txt .hd span{ font-size: 0.2rem; position: absolute; right: 0.25rem;}
+@media(max-width:320px) {
+.order .txt .hd p{ width: 75%; }
+}
+.order .txt .hh{ margin-top: 0.15rem; font-size: 0.24rem;}
+.order .txt .hh em { margin-left: 2px;}
+.order .color,.order .gather{ margin-top: 0.1rem;}
+.order .color ul,.order .gather ul{ overflow: hidden;}
+.order .color ul li,.order .gather ul li{ float: left;  margin-right: 0.05rem;  margin-bottom: 0.07rem; color: #999;font-size: 0.24rem;}
+.order .color ul li em,.order .gather ul li em{ margin: 0 1px;}
+.order .item .count{ font-size: 0.24rem; color: #000; text-align: right;}
+.order .item .count span{ margin-left: 0.2rem;}
+.order .item .btn{ margin-top: 0.3rem; text-align: right;}
+.order .item .btn button{ width: 1.6rem; height: 0.54rem; border-radius: 0.15rem; background-color: #fd554a; box-sizing: border-box; font-size: 0.24rem; color: #fff;}
+.order .item .btn .againBuyBtn{ background-color: #fff; color: #fd554a; border: 1px solid #fd554a; margin-right: 0.25rem;}
+.order .item .del{ float: left; font-size: 0.28rem; color: #000; margin-top: 0.05rem; margin-left: 0.1rem;}
+
+/*ordDetDfh.html*/
+.detCom{ overflow: hidden;}
+.detCom .hdd{ height: 0.8rem; line-height: 0.8rem; background-color: #efcac8; padding: 0 0.25rem;}
+.detCom .hdd .status{ color:#fd554a; font-size: 0.32rem; margin-right: 0.3rem;}
+.detCom .hdd .tip{ color: #080101; font-size: 0.24rem; display: inline-block;}
+.detCom .nubTime{ font-size: 0.24rem; color: #000; padding: 0.35rem 0.25rem 0.2rem; background-color: #fff; overflow: hidden; margin-bottom: 0.2rem;}
+.detCom .nubTime p{ margin-bottom: 0.15rem;}
+.detCom .address{ margin-bottom: 0.2rem; overflow: hidden; background-color: #fff;  color: #110201; }
+.detCom .hdTi{ line-height: 0.7rem; height: 0.7rem; font-size: 0.28rem;border-bottom: 1px solid #ccc; margin: 0 0.25rem; display: block;}
+.detCom .address .bd{ padding: 0.3rem 0.25rem 0.5rem; overflow: hidden; font-size: 0.24rem; }
+.detCom .address .bd .user span{ margin-right: 0.5rem;}
+.detCom .address .bd p{ line-height: 0.32rem; margin-top: 0.12rem;}
+.detCom .buyPro{ overflow: hidden; background-color: #fff; }
+.detCom .buyPro .order{ padding: 0.3rem 0.25rem 0; overflow: hidden;}
+.detCom .buyPro .list ul li{ height: 0.7rem; line-height: 0.7rem; color: #000; font-size: 0.24rem; border-bottom: 1px solid #ccc; padding: 0 0.25rem; overflow: hidden;}
+.detCom .buyPro .list ul li:first-of-type{ border-top: 1px solid #ccc;}
+.detCom .buyPro .list ul li:last-of-type{ border-bottom: 1px solid #ccc; }
+.detCom .btn{ width: 100%; height: 1rem; border: 1px solid #ccc; border-right: none; border-left: none; margin-top: 0.2rem; padding: 0 0.25rem; background-color: #fff; box-sizing: border-box;text-align: right;}
+.detCom .btn button{ width: 1.56rem; height: 0.5rem; background-color: #fd554a; color: #fff; font-size: 0.28rem; margin-top: 0.25rem; box-sizing: border-box; }
+.detCom .btn button.imeBuyBtn{ color: #fd554a;border: 1px solid #fd554a; background-color: #fff; margin-right: 0.15rem;}
+.detCom .btn .del{ float: left; font-size: 0.28rem; color: #fd554a; margin-top: 0.35rem; margin-left: 0.1rem;}
+
+/*evaluate.html*/
+.evaluate .evaIn{ margin-bottom: 0.2rem;}
+.evaluate .hd{ padding: 0.25rem; background-color: #fff; overflow: hidden;}
+.evaluate .pic{ width: 1.2rem; height: 1.2rem; border: 1px solid #ebebeb; overflow: hidden; box-sizing: border-box; position: relative; float: left;}
+.evaluate .pic a{ display: block;}
+.evaluate .pic a img{ width: 100%;}
+.evaluate .text{ margin-left: 1.5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.evaluate .text textarea{ font-size: 0.24rem; width: 100%; height: 2.1rem; line-height: 0.34rem; color: #333;}
+.evaluate .limit{ font-size: 0.2rem; color: #999; float: right; }
+.evaluate .stars{ height: 1.1rem; line-height: 1.1rem; padding: 0 0.25rem; background-color: #fff; margin-top: 1px; font-size: 0.28rem;}
+.evaluate .stars ul{ overflow: hidden; display: inline-block;  vertical-align: sub; margin-left: 0.7rem;}
+.evaluate .stars ul li{ float: left; width: 0.42rem; height: 0.4rem; background: url("../images/img-product/pf.png") no-repeat; background-size: cover; margin-right: 0.05rem;}
+.evaluate .stars ul li.hover{ background-position: right top;}
+.evaluate .stars .score{ color: #d22485; margin-right: 0.2rem;}
+.evaluate .anony{ text-align: right;text-align: right;  padding: 0 0.25rem;}
+.evaluate .anony label{vertical-align: middle;  color: #999;font-size: 0.24rem; margin-left: 0.15rem; }
+.evaluate .anony input{ width: 0.28rem; height: 0.28rem; border: 1px solid #ccc; vertical-align: middle; -webkit-appearance: checkbox; }
+.evaluate .sub{ margin-top: 0.3rem;}
+.evaluate .sub button{ width: 100%; height: 0.88rem; background-color: #fd554a; color: #fff; font-size: 0.32rem; display: block;}
+
+/*evaluateSuc.html*/
+.evaSuc .in{ padding: 0.25rem 0.25rem 0.5rem 0.25rem; background-color: #fff;}
+.evaSuc .pic{ width: 1.4rem; height: 1.4rem; border: 1px solid #ebebeb; overflow: hidden; position: relative; float: left;}
+.evaSuc .pic a{ display: block;}
+.evaSuc .pic img{ width: 100%;}
+.evaSuc .txt{ margin-left: 1.8rem;}
+.evaSuc .stars{ margin-top: 0.1rem;}
+.evaSuc .stars ul{ overflow: hidden;}
+.evaSuc .stars ul li{ float: left; width: 0.7rem; height: 0.67rem; background: url("../images/img-product/pf2.png") no-repeat; background-size: cover; display: inline-block; margin-right: 0.1rem;}
+.evaSuc .stars ul li.hover{ background-position: right top;}
+.evaSuc .score{ display: block; font-size: 0.36rem; color: #000; margin-top: 0.2rem;}
+.evaSuc .remark{ font-size: 0.28rem; color: #2e2b2b; line-height: 0.36rem; margin-top: 0.25rem;}
+.evaSuc .time{ font-size: 0.2rem; color: #2e2b2b; margin-top: 0.25rem;}
+.backOrdDet{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; margin-top: 0.2rem; text-align: center;}
+.backOrdDet a{ color: #fd554a; font-size: 0.28rem;}
+.backOrdDet a:before{ content: ""; width: 0.32rem; height: 0.3rem; background: url("../images/img-product/jt.png") no-repeat; background-size: cover; display: inline-block; vertical-align: middle; margin-right: 0.25rem;}
+
+/*stock.html*/
+.stock .hdTi{ height: 0.8rem; line-height: 0.8rem; padding: 0 0.25rem; overflow: hidden; font-size: 0.28rem;}
+.stock .hdTi p{ color: #f94c30; }
+.stock .hdTi i{ width: 0.33rem; height: 0.27rem; background-position: -3.7rem -0.1rem; vertical-align: text-top; margin-right: 0.1rem;}
+.stock .hdTi .btn .edit{ width: 1.12rem; height: 0.5rem; border: 1px solid #b5b5b5; color: #b5b5b5; font-size: 0.28rem; background-color:transparent; border-radius:0.1rem;}
+.stock .con li.item{ padding: 0.3rem 0.25rem; background-color: #fff; overflow: hidden; margin-bottom: 0.1rem; position: relative; }
+.stock .con li.item .sp{ float: left; margin-left: 0.9rem; width: 95%;}
+.stock .con li.item .che ,.stock .allche{ background: url("../images/img-product/chh.png") no-repeat left top;  width: 0.5rem;  height: 0.5rem;  background-size: cover;  display: inline-block;  left: 0.25rem; }
+.stock .con li.item .che.hover,.stock .allche.hover{ background-position: right top;}
+.stock .allche{ vertical-align: middle; margin-right: 0.2rem;}
+.stock .con li.item .txt .hd p { width: 65%;}
+@media (max-width: 320px){
+    .stock .con li.item .txt .hd p { width: 60%;  }
+}
+.stock .bot{ width: 100%; height: 0.88rem; position: relative;}
+.stock .bot .ttIn{ position: fixed; left:0; bottom: 1rem; width: 100%; height: 0.88rem; border:1px solid  #86c832; margin: 0 -1px; background-color: #fff;}
+.stock .bot .ttIn .sel{margin-left: 0.25rem; line-height: 0.88rem; font-size: 0.24rem; color: #000; }
+.stock .bot .ttIn .sel label{ vertical-align: middle;}
+.stock .bot .buyBtn{ width: 35%; height: 100%; line-height: 0.88rem; text-align: center; background-color: #86c832;}
+.stock .bot .buyBtn a{ color: #fff; font-size: 0.28rem; display: block;}
+.stock .bot .total{ margin-right: 0.3rem; margin-top: 0.15rem;}
+.stock .bot .total .ti{ font-size: 0.28rem; color: #f94c30;}
+.stock .bot .total .yf{ font-size: 0.2rem; color: #999; margin-top: 0.1rem; text-align: center;}
+.zdyPop{ position: fixed; left:0; top:0; z-index: 888; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: none;}
+.zdyPop .in{ width: 83%; background-color: #fff; border-radius: 0.1rem;}
+.zdyPop .in .con{ padding: 0.2rem; overflow: hidden; position: relative;}
+.zdyPop .in .con i{ background: url("../images/img-product/wen.png") no-repeat; width: 0.42rem; height: 0.42rem; background-size: cover; position: absolute; right: 0.2rem; top: 0.2rem;}
+.zdyPop .hd{ text-align: center; padding-top: 0.45rem;}
+.zdyPop .hd .ti{ font-size: 0.36rem; color: #000;}
+.zdyPop .hd p{ font-size: 0.2rem; color: #666; margin-top: 0.15rem;}
+.zdyPop .mid{ margin-top: 0.6rem;}
+.zdyPop .mid textarea{ width: 100%; height: 3.8rem; border: 1px solid #aaa; font-size: 0.28rem; padding: 0.15rem; box-sizing: border-box;}
+.zdyPop .bot{ margin-top: 0.3rem; margin-bottom: 0.1rem; text-align: center;}
+.zdyPop .bot button { width: 1.7rem; height: 0.6rem; box-sizing: border-box; font-size: 0.28rem; }
+.zdyPop .bot button.cancleBtn{ color: #f94c30; border: 1px solid #f94c30; background-color: transparent; margin-right: 0.4rem;}
+.zdyPop .bot button.sureBtn{ color: #fff; background-color:  #f94c30;}
+
+.stock .hdTi .allNum{ display: none;}
+.stock2 .color{ display: none;}
+.stock2 .hdTi .btn .edit{ color: #f14239;}
+.stock2 .hdTi .tip{ display: none;}
+.stock2 .hdTi .allNum{ display: block; float: left;}
+.stock .chgParm,.stock .chgParmZdy{ display: none;}
+.stock2 .chgParm,.stock2 .chgParmZdy{ color: #fd554a; font-size: 0.24rem; margin-top: 0.4rem; margin-left: 1rem; display: block;}
+.stock2 .chgParm i,.stock2 .chgParmZdy i{ width: 0.24rem; height: 0.13rem; background-position: -4.3rem -0.2rem; vertical-align: middle; margin-left: 0.1rem;}
+.stock2 .gather ul li:last-of-type{ display: none;}
+.stock2 .bot .total{ display: none;}
+.stock .bot .delBtn{ display: none;}
+.stock2 .bot .buyBtn{ display: none;}
+.stock2 .bot .delBtn{ width: 35%; height: 100%; line-height: 0.88rem; text-align: center; background-color: #86c832; display: block;}
+.stock2 .bot .delBtn a{ color: #fff; font-size: 0.28rem; display: block;}
+
+
+
+
+
+

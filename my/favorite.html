@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收藏夹</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="x5-page-mode" content="no-title">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/my.css" />
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/my.js"></script>
+    <script src="../js/jquery-min.js"></script>
+    <script src="../js/jquery.lazyload.mini.js"></script>
+</head>
+<body>
+
+<section class="favorite">
+    <div class="in">
+        <div class="hd pdlr4">
+            <div class="ti fl">共收藏<em>6</em>个商品</div>
+            <div class="btn fr"><button class="edit">编辑</button></div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="javascript:;" class="item">
+                        <div class="pic">
+                            <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro01.png" alt="商品图">
+                        </div>
+                        <div class="txt">
+                            <p>中性笔水笔碳素笔学生签字笔deli得力文具办公文具筒装</p>
+                            <span class="pri">￥18.00</span>
+                        </div>
+                    </a>
+                    <div class="btn">
+                        <button class="addQd">加入清单</button>
+                    </div>
+                    <div class="ver_center che"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="item">
+                        <div class="pic">
+                            <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro02.png" alt="商品图">
+                        </div>
+                        <div class="txt">
+                            <p>日韩创意插画彩页心情笔记本文具欧式可爱复古厚女生记事日记本子</p>
+                            <span class="pri">￥28.00</span>
+                        </div>
+                    </a>
+                    <div class="btn">
+                        <button class="addQd">加入清单</button>
+                    </div>
+                    <div class="ver_center che"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="item">
+                        <div class="pic">
+                            <img src="../images/img-index/proLoad.gif" original="../images/img-index/pro03.png"  alt="商品图">
+                        </div>
+                        <div class="txt">
+                            <p>一叶知秋笔记本复古旅行日记本创意本子韩国文具活页记事本小随身</p>
+                            <span class="pri">￥38.00</span>
+                        </div>
+                    </a>
+                    <div class="btn">
+                        <button class="addQd">加入清单</button>
+                    </div>
+                    <div class="ver_center che"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="qxFav">
+            <div class="con">
+                <span><i></i>取消收藏</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="buyInWrap" style="display: block;">
+    <div class="in">
+        <div class="proDet">
+            <i class="close iconFamily"></i>
+            <div class="det">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../images/img-index/buyPro01.png"></a>
+                </div>
+                <div class="txt">
+                    <p class="p1">货号<em>15201</em></p>
+                    <p class="p2"><span>￥9.9</span><del>￥18.8</del></p>
+                    <p class="p3"><span>起购≥20</span></p>
+                </div>
+            </div>
+            <div class="amount">
+                <ul>
+                    <li>
+                        <span class="color fl">红色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">黑色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">白色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">黑色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">紫色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="color fl">灰色</span>
+                        <div class="count fr">
+                            <span class="reduceBtn"></span>
+                            <input type="text" value="1">
+                            <span class="addBtn"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button type="button" class="buyBtn" onclick="window.location.href='subOrder.html'">立即购买</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(function(){
+        //购买数量
+        var maxNum = 1000;
+        function redAdd(red,add){
+            $(red).click(function(event) {
+                var num = parseInt($(this).siblings('input').val());
+                num--;
+                if(num < 0){
+                    num = 0;
+                }
+                $(this).siblings('input').val(num);
+            });
+            $(add).click(function(event) {
+                var num = parseInt($(this).siblings('input').val());
+                num++;
+                if(num > maxNum){
+                    num = maxNum;
+                }
+                $(this).siblings('input').val(num);
+            });
+        }
+        redAdd('.reduceBtn','.addBtn');
+        //弹窗
+        function popUp(btn,wrap,close){
+            var speed  = 200;
+            $(wrap).hide();
+            $(btn).click(function(){
+                $(wrap).fadeIn(speed);
+                $('html').css('overflow','hidden');
+            })
+            $(close).click(function(){
+                $(wrap).fadeOut(speed);
+                $('html').css('overflow','initial');
+            })
+        }
+        popUp('.addQd','.buyInWrap','.buyInWrap .close');
+    })
+</script>
+
+<script>
+    var jq=jQuery.noConflict();
+    jq(function(){jq(".list li img").lazyload({placeholder:"../images/img-index/proLoad.gif",effect:"fadeIn"});});
+</script>
+
+<script>
+    $(function(){
+        $('.che').hide();
+        $('.qxFav').hide();
+        var bl = true;
+        $('.favorite .edit').click(function(){
+            bl ? $(this).html('完成') : $(this).html('编辑');
+            $('.che,.qxFav,.addQd').toggle();
+            bl = !bl;
+        });
+        $('.che').click(function () {
+            $(this).toggleClass('hover');
+            $('.qxFav').click(function () {
+                $('.list ul>li').each(function () {
+                     if($(this).find('.che').hasClass('hover')){
+                        $(this).remove();
+                     }
+                });
+                if($('.list ul li').size()==0){
+                    $('.edit').hide();
+                    $('.qxFav').hide();
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>

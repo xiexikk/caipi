@@ -1,0 +1,70 @@
+/*����ͼ*/
+.iconFamily{  background: url("../images/iconFamily/icon-family.png"); background-size: 5rem 5rem; display: inline-block;}
+
+/*�ײ�����*/
+.footer { width: 100%; height:0.95rem; margin-top: 0.2rem;}
+.footer .nav { width: 100%; height:0.95rem;background-color: #fff; border-top: 1px solid #cbc6c6;  box-sizing: border-box; overflow: hidden;  position: fixed; bottom: 0; left: 0; z-index: 99;}
+.footer .nav ul { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.footer .nav ul li { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; padding: 0.04rem 0; }
+.footer .nav ul li a { display: block; text-align: center; font-size: 0.2rem; }
+.footer .nav ul li a span { display: block; margin-top: 0.05rem;}
+.footer .nav ul li.cur a span { color: #f94c30; }
+.footer .nav ul li a img { width: 0.55rem; height: 0.55rem; }
+
+/*���ض���*/
+.backTop{ position: fixed; right: 0.4rem; bottom: 0.5rem; z-index: 99;}
+.backTop i{ width: 0.74rem; height: 0.74rem; background-position: 0 -0.45rem;.}
+
+/*������*/
+.buyInWrap{ width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: fixed;  left: 0; right: 0; top: 0; bottom:0; z-index: 88888; display: none;}
+.buyInWrap .in{ width: 100%; position: absolute; left: 0; bottom:0;}
+.buyInWrap .proDet{ width: 100%; box-sizing: border-box; background-color: #fff; position: relative ;}
+.buyInWrap .proDet .close{ width: 0.5rem ;height: 0.5rem; background-position: -0.6rem -1.75rem; display: inline-block; position: absolute; right: 0.25rem; top: -0.25rem;}
+.buyInWrap .proDet .det{padding: 0.3rem 0.2rem; overflow: hidden;}
+.buyInWrap .proDet .det .pic{ width: 1.84rem; height: 1.84rem; border: 1px solid #eee; overflow: hidden; box-sizing: border-box; position: relative; float: left;}
+.buyInWrap .proDet .det .pic a{ display: block;}
+.buyInWrap .proDet .det .pic a img{ width: 100%;}
+.buyInWrap .proDet .det .txt{ margin-left: 2rem;}
+.buyInWrap .proDet .det .txt .p1{ font-size: 0.32rem; color: #000; margin-bottom: 0.35rem; margin-top: 0.05rem;}
+.buyInWrap .proDet .det .txt .p2{  font-size: 0.36rem; color: #999; margin-bottom: 0.3rem;}
+.buyInWrap .proDet .det .txt .p2 span{ color: #fd554a; margin-right: 0.3rem;}
+.buyInWrap .proDet .det .txt .p3{  font-size:0.28rem; color: #666;}
+.buyInWrap .proDet .amount{ margin: 0.3rem 0.25rem; overflow: hidden;}
+.buyInWrap .proDet .amount ul{ width: 100%; box-sizing: border-box; overflow: auto; max-height: 5.5rem;}
+.buyInWrap .proDet .amount ul li{ margin-bottom: 0.5rem; overflow: hidden;}
+.buyInWrap .proDet .amount ul li .color{ color: #000; font-size: 0.28rem;line-height: 0.6rem;}
+.buyInWrap .proDet .amount ul li .count{ margin-right: 0.2rem;}
+.buyInWrap .proDet .amount ul li .count span{ width: 0.6rem; height: 0.6rem; background: url("../images/img-index/count.png") no-repeat; background-size: cover; float: left;}
+.buyInWrap .proDet .amount ul li .count span.reduceBtn{ background-position: left top;}
+.buyInWrap .proDet .amount ul li .count span.addBtn{ background-position: right top;}
+.buyInWrap .proDet .amount ul li .count input{ float: left; width: 1.3rem; height: 0.6rem; line-height: 0.6rem; padding: 0 0.1rem; text-align: center; font-size: 0.28rem; color: #000;  border: 1px solid #ccc; border-left: none; border-right: none; box-sizing: border-box;}
+.buyInWrap .proDet .btn{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.buyInWrap .proDet .btn button{ -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: 1rem; line-height: 0.1rem;  background-color: #fd554a; text-align: center; font-size: 0.32rem; color: #fefcfc;}
+@media(max-height:480px) {
+    .buyInWrap .proDet .amount ul{ max-height: 4.4rem;}
+}
+.buyInWrap .proDet .amount .sel{ margin-bottom: 0.1rem;}
+.buyInWrap .proDet .amount .sel>span{ padding: 0.1rem 0.1rem; font-size: 0.26rem; border: 1px solid #ccc; margin: 0.05rem; display: inline-block;}
+.buyInWrap .proDet .amount .sel>span.cur{ border-color: #fd554a;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
